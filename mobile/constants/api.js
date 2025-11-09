@@ -1,0 +1,1 @@
+export const API_URL = "https://showcase-backend-zp4b.onrender.com/api";
