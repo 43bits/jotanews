@@ -5,8 +5,9 @@ import { Ionicons } from "@expo/vector-icons";
 import { checkFakeNews } from "../../utils/perplexity";
 import axios from "axios";
 
-const GOOGLE_API_KEY = "AIzaSyDXM8ht8304PRECU0547oL3I1vza3mIwcI";
-const GOOGLE_CX = "819ec3ca38b294903";
+const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY;
+const GOOGLE_CX = process.env.GOOGLE_CX;
+
 
 export default function NewsCheck() {
   const { text } = useLocalSearchParams();
