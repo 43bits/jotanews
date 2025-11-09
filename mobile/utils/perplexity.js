@@ -2,11 +2,6 @@ import axios from "axios";
 
 const PERPLEXITY_API_KEY = process.env.PERPLEXITY_API_KEY; // <- use env variable
 
-
-if (!PERPLEXITY_API_KEY) {
-  console.warn("⚠️ Perplexity API key is not set. Please set process.env.PERPLEXITY_API_KEY");
-}
-
 /**
  * Check whether a news item (text, image URL, or video URL) is real or fake / official or unofficial.
  *
